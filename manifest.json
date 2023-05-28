@@ -1,23 +1,23 @@
 {
     "name": "Theme-Changer",
-    "description": "Change theme of a website",
+    "description": "Change Theme of any webstite",
     "version": "1.0.0",
     "manifest_version": 3,
     "background": {
-        "scritps": [
-            "popup.js"
-        ],
-    
-    "persistent": true
+        "service_worker": "popup.js",
+        "type": "module"    
     },
+
     "action": {
         "default_title": "Theme-Changer",
         "default_popup": "popup.html"
     },
+
+    "host_permissions": [
+        "<all_urls>"
+    ],
+
     "permissions": [
-        "https://*/*",
-        "http://*/*",
         "tabs"
     ]
-
 }
