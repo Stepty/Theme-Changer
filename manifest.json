@@ -1,0 +1,23 @@
+{
+    "name": "Theme-Changer",
+    "description": "Change theme of a website",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "scritps": [
+            "popup.js"
+        ],
+    
+    "persistent": true
+    },
+    "action": {
+        "default_title": "Theme-Changer",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+
+}
